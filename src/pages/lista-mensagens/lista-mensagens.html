@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Lista de Mensagens</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item-sliding *ngFor="let mensagem of mensagens">
+          <ion-item>
+            <h2>{{ mensagem.mensagem }}</h2>
+          </ion-item>
+        </ion-item-sliding>     
+      </ion-list>
+
+
+
+</ion-content>
